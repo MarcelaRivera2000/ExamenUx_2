@@ -12,7 +12,7 @@ function App() {
   const [user,setUser]=useState ([]);/*Usuario actual*/
   const [todo,setTodos]=useState ([]);/*Publicaciones*/
   const [inputText,setInputText] = useState ("");/*Nuevo Post*/
-  const [ingreso,setIngreso]=useState (false);/*Abrir y cerrar Inicio*/
+  const [ingreso,setIngreso]=useState (true);/*Abrir y cerrar Inicio*/
   const [ListaUsuarios,setListaUsuarios]=useState ([]);/*Lista Usuarios*/
 
   useEffect (()=>{
