@@ -1,12 +1,17 @@
 import React from 'react'
 
-const MenuVar=()=>{
+const MenuVar=({setIngreso})=>{
+        const cerrar=()=>{
+            setIngreso(true);
+        }
         return (
             <div className ="wrapper">
                 <p id="NameEmpresa">Menexx News</p>
                 <nav>
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                     <a href="#"  type="button">Notifications</a>
-                    <a href="#"  type="button">Log Out</a>
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
+                    <a href="#"  type="button" onClick={cerrar}>Log Out</a>
                 </nav>
         
             </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import News from './News';
 
-const TodoList =({todo})=>{  
+const TodoList =({todo,user})=>{  
     return(
         <div id="Aver3">
             {todo.map(todo=>(
@@ -13,6 +13,7 @@ const TodoList =({todo})=>{
                    activo={todo.activo}
                    user={todo.usuario}
                    date={todo.date}
+                   useruser={user.email}
                 /> 
             ))}          
         </div>

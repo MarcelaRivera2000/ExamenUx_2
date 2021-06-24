@@ -1,8 +1,8 @@
-import React  from 'react';
+import React from 'react';
 import Like from '../assets/imagenes/like.png';
 import dislike from '../assets/imagenes/dislike.png';
 
-const News =({titulo,descripcion,likes,dislikes,user})=>{
+const News =({titulo,descripcion,likes,dislikes,user,useruser})=>{
         return (
             <div id="Contenido-Contener">
                 <h4 id="Titulo">{user}<br/>{titulo}</h4>
@@ -13,7 +13,8 @@ const News =({titulo,descripcion,likes,dislikes,user})=>{
                         {dislikes}<img src={dislike} className="tamano" alt=""/>
                     </div>
                 </div>
-                <button id="btnEliminar">Eliminar</button>
+                    <button id="btnEliminar">Eliminar</button>
+               
             </div>
         );
 }

@@ -7,10 +7,13 @@ import firebase from './firebase'
 const Inicio=({setUser,setIngreso,ListaUsuarios})=>{
     const userr={
         email:"",
-        pass:""
+        pass:"",
+        amigo:[0],
+        post:[0],
+        solicitudes:[0]
     }
-    const[abrir,setAbrir]= useState(true);
 
+    const[abrir,setAbrir]= useState(true);
     const submitTodoHandler=(e)=>{
         e.preventDefault();
         setUser(userr);
@@ -19,7 +22,6 @@ const Inicio=({setUser,setIngreso,ListaUsuarios})=>{
         const todoRef=firebase.database().ref('User');
         todoRef.push(userr);
     };
-    
     const inputEmail=(titulo)=>{
         userr.email=titulo.target.value;
     };
@@ -40,8 +42,6 @@ const Inicio=({setUser,setIngreso,ListaUsuarios})=>{
         // eslint-disable-next-line eqeqeq
         if(aux==false){
             alert("Email / Contrasena Incorrecta");
-            userr.email="";
-            userr.pass="";
         }
     }
     

@@ -1,7 +1,8 @@
 import React from 'react';
 import Portada from '../assets/imagenes/Portada.jpg'
+import Btn from './BotonAmistad'
 
-const Amigos =({email})=>{
+const Amigos =({email,user})=>{
     return(
             <div className="friend-card">
                   <img src={Portada} alt="profile-cover" className="img-responsive cover"/>
@@ -10,7 +11,7 @@ const Amigos =({email})=>{
                   <div className="friend-info">
                     <h4 className="profile-link">{email}</h4>
                     <br/>
-                    <botton  className="text-green"><b>Solicitar Amistad</b></botton>
+                      <Btn amigo={email} user={user}/>
                     <br/>
                   </div>
                 </div>

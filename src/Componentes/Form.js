@@ -24,9 +24,9 @@ const Form =({setInputText,setTodos,todo,user})=>{
             usuario:apunte.usuario,
             date:new Date()}]);
             setInputText("");
-            
-        const todoRef=firebase.database().ref('Apunte');
-        todoRef.push(apunte);     
+            (user.post).push(apunte);   
+            const todoRef=firebase.database().ref('Apunte');
+            todoRef.push(apunte);         
     };
 
     const inputTitulo=(titulo)=>{

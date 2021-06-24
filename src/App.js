@@ -23,7 +23,7 @@ function App() {
       for(let id in usuarios ){
         usuariosLista.push(usuarios[id]);
       }
-      console.log(usuariosLista)
+      console.log(usuariosLista);
       setListaUsuarios(usuariosLista);
     });
 
@@ -31,7 +31,7 @@ function App() {
     todoReff.on("value",(snapshot)=>{
       const Apuntes=snapshot.val();
       const ApuntesLista=[];
-      for(let id in Apuntes ){
+      for(let id in Apuntes){
         ApuntesLista.push(Apuntes[id]);
       }
       console.log(ApuntesLista)
@@ -42,7 +42,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <MenuVar/>
+        <MenuVar setIngreso={setIngreso}/>
       </header>
       <Modal isOpen={ingreso}>
           <Inicio user={user} setUser={setUser} setIngreso={setIngreso} ListaUsuarios={ListaUsuarios}/>
@@ -50,9 +50,9 @@ function App() {
       <div id="Aver">
         <div id="Aver2">
           <Form todo={todo} setTodos={setTodos} setInputText={setInputText} inputText={inputText} user={user} />
-          <TodoList todo={todo}/>
+          <TodoList todo={todo} user={user}/>
         </div>
-        <ListaAmigos ListaUsuarios={ListaUsuarios}/>
+        <ListaAmigos ListaUsuarios={ListaUsuarios} user={user} />
       </div>
     </div>
   );
