@@ -1,0 +1,134 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+.wrapper{
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;   
+}
+
+body{
+  background-color: #f0f0f0;
+}
+
+header{
+  color: #fff;  
+  width: 100%;
+  overflow: hidden;
+  background-color: #1f2022;
+}
+
+#NameEmpresa{
+  line-height:100px;
+  float:left;
+  font-size: 50px;
+  color: #fff;
+  font-weight: bold;
+  opacity: 80%;
+}
+
+header nav{
+  float:right;
+  line-height: 100px;
+  text-decoration: none;
+}
+
+header nav a {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  line-height: normal;
+  font-size: 20px;
+  text-decoration: none;
+  opacity: 80%;
+  -webkit-transition:all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+header nav a:hover{
+  background: #690ffa;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+#inputMenu{
+  height: 30px;
+  width: 20%;
+  padding-left: 20px;
+  border:1px solid #b8b8b8;
+}
+
+#AgregarApunte{
+  margin-top:50px;
+  margin-left: 20%;
+  margin-right: 5%;
+}
+
+#AgregarApunte #Vtitulo,#Vtext-area{
+  width: 100%;
+  margin-top:10px;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid #acacac;
+  padding-left: 10px;
+}
+
+#AgregarApunte #Vtext-area{
+  height: 150px;
+}
+
+#AgregarApunte #btnGuardar{
+  width: 102%;
+  height: 30px;
+  background-color: #69aa7a;
+  border: 1px solid #226935;
+  border-radius: 5px;
+  color: #fff;
+}
+
+#Contenido-Contener{
+  margin-top:20px;
+  margin-left: 20%;
+  margin-right: 5%;
+  border: 1px solid #949494;
+  background-color: #fff;
+}
+
+#Contenido-Contener h4{
+  margin-top: 5px;
+  border-bottom: 1px solid #949494;
+  padding-left: 2%;
+  margin-bottom: 5px;
+}
+
+#Tarea-Interacciones{
+  display: flex;
+  margin-top: 10px;
+}
+
+#Contenido-Tarea{
+  margin:2%;
+}
+
+#btnEliminar{
+  margin-left: 2%;
+  width: 20%;
+  height: 30px;
+  margin-bottom: 5px;
+  background-color: #690ffa;
+  color: #fff;
+  border: 1px solid #2e0a68;
+}
+
+#Aver{
+  display: flex;
+}
+
+#Aver2{
+  width: 90%;
+}

@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+#PantallaInicioFondo{
+    z-index: 100;
+    background: rgba(0,0,0,.8);
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#PantallaIncio{
+    background: #f8f8f8;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+}
+
+#PantallaIncio h2{
+    margin-bottom: 40px;
+}
+
+#PantallaIncio h4{
+    margin:10px;
+}
+
+#PantallaIncio input{
+    width: 250px;
+    height: 27px;
+    border-radius: 5px;
+    border: 1px solid #dbdbdb;
+    padding-left: 10px;
+}
+
+#PantallaIncio .btn{
+    margin:5px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#ConjuntoBtn #btnSingIn{
+    width: 45%;
+}
+#ConjuntoBtn #btnRegistrar{
+    width: 35%;
+}
+
+#PantallaIncio #SingInGoogle{
+    width: 85%;
+    background-color: #69aa7a;
+    border: 1px solid #226935;
+    color: #fff;
+}
